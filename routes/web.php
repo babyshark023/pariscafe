@@ -19,10 +19,4 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('anasayfa');
 });
-Route::post('menu/urun_post',[KayipController::class,'create'])->name('urun_post');
-Route::get('/',[MenuController::class,"index"]);
-
-Route::get('/form' ,function () {
-    return view('form');
-});
 
