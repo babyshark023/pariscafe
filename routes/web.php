@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\UrunisimController;
 
 
 /*
@@ -19,4 +20,9 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('anasayfa');
 });
+Route::get('/sepet',function (){
 
+return view('sepet');
+})->name('sepet');
+Route::get('/urunpost',[UrunisimController::class,'Sepetfonk'])->name('urunpost');
+Route::get('/veriler', [UrunisimController::class, 'show']);

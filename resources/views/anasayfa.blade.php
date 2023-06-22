@@ -32,9 +32,11 @@
         <button>
             <i class="fas fa-search"></i>
         </button>
+        <a href="{{ route('sepet') }}">
         <button>
             <i class="fas fa-shopping-cart"></i>
         </button>
+        </a>
     </div>
 
     <div class="search-form">
@@ -98,7 +100,11 @@
                 <span class="menu-ketegori">Tatlı</span>
                  <h3>  kremalı çilekli makaron kek</h3>
                  <div class="fiyat">79.90</div>
-                <a href="#" class="btn">Sepete Ekle</a>
+                <form method="GET" action="{{ route('urunpost') }}">
+                    @csrf
+                    <input type="hidden" name="urun_adi" value="kremalı çilekli makaron kek" />
+                    <button type="submit">Sepete ekle</button>
+                </form>
             </div>
         </div>
 
@@ -115,7 +121,11 @@
         <span class="menu-ketegori">Tatlı</span>
         <h3> makaron çeşitleri</h3>
         <div class="fiyat">(adet)38.90</div>
-        <a href="#" class="btn">Sepete Ekle</a>
+        <form method="GET" action="{{ route('urunpost') }}">
+            @csrf
+            <input type="hidden" name="urun_adi" value="makaron çeşitleri" />
+            <button type="submit">Sepete ekle</button>
+        </form>
     </div>
     </div>
 
@@ -126,7 +136,11 @@
         <span class="menu-ketegori">Tatlı</span>
         <h3> muhallebi</h3>
         <div class="fiyat">79.90</div>
-        <a href="#" class="btn">Sepete Ekle</a>
+        <form method="GET" action="{{ route('urunpost') }}">
+            @csrf
+            <input type="hidden" name="urun_adi" value=" muhallebi" />
+            <button type="submit">Sepete ekle</button>
+        </form>
     </div>
     </div>
 
@@ -146,7 +160,11 @@
                 <span class="menu-ketegori">içecek</span>
                 <h3>  filtre kahve</h3>
                 <div class="fiyat">56.90</div>
-                <a href="#" class="btn">Sepete Ekle</a>
+                <form method="GET" action="{{ route('urunpost') }}">
+                    @csrf
+                    <input type="hidden" name="urun_adi" value="filtre kahve" />
+                    <button type="submit">Sepete ekle</button>
+                </form>
             </div>
         </div>
 
@@ -163,7 +181,11 @@
                 <span class="menu-ketegori">içecek</span>
                 <h3> bitki çayı</h3>
                 <div class="fiyat">48.90</div>
-                <a href="#" class="btn">Sepete Ekle</a>
+                <form method="GET" action="{{ route('urunpost') }}">
+                    @csrf
+                    <input type="hidden" name="urun_adi" value=" bitki çayı" />
+                    <button type="submit">Sepete ekle</button>
+                </form>
             </div>
         </div>
 
@@ -174,7 +196,11 @@
                 <span class="menu-ketegori">içecek</span>
                 <h3> latte</h3>
                 <div class="fiyat">57.90</div>
-                <a href="#" class="btn">Sepete Ekle</a>
+                <form method="GET" action="{{ route('urunpost') }}">
+                    @csrf
+                    <input type="hidden" name="urun_adi" value="latte" />
+                    <button type="submit">Sepete ekle</button>
+                </form>
             </div>
         </div>
 
