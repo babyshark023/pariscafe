@@ -14,18 +14,15 @@
 <body>
 <div class="giris_navbar">
 
-    <b class="baslik">ÜRÜN BİLGİLERİNİZİ GİRİNİZ</b>
+    <b class="baslik">ÜRÜN BİLGİLERİNİ GİRİNİZ</b>
 </div>
-<form action="{{route('urun_post')}}" method="get" class="form-bolumu" enctype="multipart/form-data">
+<form action="{{route('ek')}}" method="get" class="form-bolumu" enctype="multipart/form-data">
     @csrf
-    <label for="foto">Ürün Fotografı:</label>
-    <input type="file" id="urun_foto" name="urun_foto" accept="image/*" required>
-    <br>
-    <br>
+
 
 
     <label for="tatlı_icecek">Ürünün Türünü Giriniz:</label>
-    <select class="custom-select" id="tatlı_icecek" name="tatlı_icecek" required>
+    <select class="custom-select" id="tatlı_icecek" name="urun_cesit" required>
         <option value="">Ürünü Seçiniz</option>
         <option value="0">tatlı</option>
         <option value="1">içecek</option>
@@ -36,15 +33,15 @@
 
 
     <label for="adi">Ürünün Adı:</label>
-    <input type="text" id="adi" name="adi" required>
+    <input type="text" id="adi" name="urun_adi" required>
     <br><br>
 
-    <label for="fiyat">:</label>
-    <input type="text" id="fiyat" name="fiyat" required>
+    <label for="fiyat">Ürünün Fiyatı:</label>
+    <input type="text" id="fiyat" name="urun_fiyat" required>
     <br><br>
 
 
-    <input type="submit" value="İlan Ver">
+    <input type="submit" value="ekle">
 </form>
 
 

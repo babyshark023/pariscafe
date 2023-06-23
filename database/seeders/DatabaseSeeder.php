@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(UrunisimSeeder::class);
+        $this->call(UrunekleSeeder::class);
     }
 }
