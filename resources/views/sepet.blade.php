@@ -8,7 +8,7 @@
         }
 
         .urun {
-            color: white;
+            color: black;
         }
     </style>
 </head>

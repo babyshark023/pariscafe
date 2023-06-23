@@ -25,4 +25,4 @@ Route::get('/sepet',function (){
 return view('sepet');
 })->name('sepet');
 Route::get('/urunpost',[UrunisimController::class,'Sepetfonk'])->name('urunpost');
-Route::get('/veriler', [UrunisimController::class, 'show']);
+Route::get('/veriler', [UrunisimController::class, 'show'])->name('veriler_show');

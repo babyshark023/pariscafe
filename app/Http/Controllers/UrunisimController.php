@@ -16,7 +16,8 @@ class UrunisimController extends Controller
 
     public function show()
     {
-        $veriler = Urunisim::select('urun_adi')->get();
+        $veriler = Urunisim::all();
+
         return view('sepet', compact('veriler'));
 
     }

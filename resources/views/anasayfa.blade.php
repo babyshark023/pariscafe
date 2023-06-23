@@ -32,7 +32,7 @@
         <button>
             <i class="fas fa-search"></i>
         </button>
-        <a href="{{ route('sepet') }}">
+        <a href="{{ route('veriler_show') }}">
         <button>
             <i class="fas fa-shopping-cart"></i>
         </button>
