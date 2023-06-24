@@ -25,4 +25,5 @@ class UrunekleController extends Controller
 
     }
 
+
 }

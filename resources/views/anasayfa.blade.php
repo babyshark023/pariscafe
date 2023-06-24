@@ -103,6 +103,8 @@
                 <form method="GET" action="{{ route('urunpost') }}">
                     @csrf
                     <input type="hidden" name="urun_adi" value="kremalı çilekli makaron kek" />
+                    <input type="hidden" name="urun_cesit" value="tatli" />
+                    <input type="hidden" name="urun_fiyat" value=79.90 />
                     <button type="submit">Sepete ekle</button>
                 </form>
             </div>
@@ -124,6 +126,8 @@
         <form method="GET" action="{{ route('urunpost') }}">
             @csrf
             <input type="hidden" name="urun_adi" value="makaron çeşitleri" />
+            <input type="hidden" name="urun_cesit" value="tatli" />
+            <input type="hidden" name="urun_fiyat" value=38.90 />
             <button type="submit">Sepete ekle</button>
         </form>
     </div>
@@ -139,6 +143,8 @@
         <form method="GET" action="{{ route('urunpost') }}">
             @csrf
             <input type="hidden" name="urun_adi" value=" muhallebi" />
+            <input type="hidden" name="urun_cesit" value="tatli" />
+            <input type="hidden" name="urun_fiyat" value=79.90 />
             <button type="submit">Sepete ekle</button>
         </form>
     </div>
@@ -163,6 +169,8 @@
                 <form method="GET" action="{{ route('urunpost') }}">
                     @csrf
                     <input type="hidden" name="urun_adi" value="filtre kahve" />
+                    <input type="hidden" name="urun_cesit" value="icecek" />
+                    <input type="hidden" name="urun_fiyat" value=56.90 />
                     <button type="submit">Sepete ekle</button>
                 </form>
             </div>
@@ -184,6 +192,8 @@
                 <form method="GET" action="{{ route('urunpost') }}">
                     @csrf
                     <input type="hidden" name="urun_adi" value=" bitki çayı" />
+                    <input type="hidden" name="urun_cesit" value="icecek" />
+                    <input type="hidden" name="urun_fiyat" value=48.90 />
                     <button type="submit">Sepete ekle</button>
                 </form>
             </div>
@@ -199,6 +209,8 @@
                 <form method="GET" action="{{ route('urunpost') }}">
                     @csrf
                     <input type="hidden" name="urun_adi" value="latte" />
+                    <input type="hidden" name="urun_cesit" value="icecek" />
+                    <input type="hidden" name="urun_fiyat" value=57.90 />
                     <button type="submit">Sepete ekle</button>
                 </form>
             </div>

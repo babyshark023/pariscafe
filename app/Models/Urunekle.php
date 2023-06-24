@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Http\Controllers\UrunekleController;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,5 +15,6 @@ class Urunekle extends Model
         'urun_adi',
         'urun_fiyat',
     ];
+
 
 }

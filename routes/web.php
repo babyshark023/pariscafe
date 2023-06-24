@@ -31,4 +31,6 @@ Route::get('/urunekle',function () {
 Route::get('/urunpost',[UrunisimController::class,'Sepetfonk'])->name('urunpost');
 Route::get('/veriler', [UrunisimController::class, 'show'])->name('veriler_show');
 Route::get('/ek',[UrunekleController::class, 'ekle'])->name('ek');
+Route::get('/toplam',[UrunekleController::class,'toplam'])->name('toplam');
+
 

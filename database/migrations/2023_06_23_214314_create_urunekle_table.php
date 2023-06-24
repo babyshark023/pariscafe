@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('urun_cesit');
             $table->string('urun_adi');
-            $table->string('urun_fiyat');
+            $table->double('urun_fiyat');
             $table->timestamps();
         });
     }
