@@ -1,0 +1,155 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+/* Some Varibles */
+:root {
+    --main-color: #ffb43a;
+    --hover-color: hsl(37, 94%, 57%);
+    --body-color: #1e1e2a;
+    --container-color: #2d2e37;
+    --text-color: #fcfeff;
+}
+/* Custom Scroll Bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+/* Selection Color */
+::selection {
+    background: var(--main-color);
+    color: var(--text-color);
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+section {
+    padding: 3rem 0 2rem;
+}
+img {
+    width: 100%;
+}
+.bx {
+    cursor: pointer;
+}
+body {
+    background: var(--body-color);
+    color: var(--text-color);
+}
+.container {
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+}
+
+/* Table Number */
+.table {
+    margin-top: 2rem !important;
+}
+.table h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.table p {
+    max-width: 600px;
+    font-size: 0.938rem;
+    margin: 10px 0;
+}
+/* Number */
+.number-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+.number {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    gap: 1rem;
+}
+.number-img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+.button{
+    margin-top: 10px;
+    background-color: var(--main-color);
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1170px) {
+    .navbar {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: translateY(0);
+        flex-direction: row;
+        justify-content: space-evenly;
+        row-gap: 1px;
+        padding: 10px;
+        border-top: 1px solid hsl(200 100% 99% / 5%);
+        background: linear-gradient(
+            8deg,
+            hsl(240 17% 14% / 100%) 5%,
+            hsl(240 17% 14% / 90%) 100%
+        );
+    }
+    .nav-link .bx {
+        font-size: 1.5rem;
+    }
+    .copyright {
+        margin-bottom: 4rem;
+    }
+}
+@media (max-width: 1060px) {
+    .container {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+/* For Small Devices */
+@media (max-width: 370px) {
+    .home {
+        min-height: 300px;
+    }
+    .movie-box {
+        height: 285px;
+    }
+    .user-img,
+    .watch-btn .bx {
+        width: 35px;
+        height: 35px;
+    }
+    .navbar {
+        justify-content: space-around;
+        padding: 8px 0;
+    }
+    .nav-link .bx {
+        font-size: 1.4rem;
+    }
+    .about-movie p {
+        text-align: justify;
+    }
+    .download-links {
+        grid-template-columns: 1fr;
+    }
+}

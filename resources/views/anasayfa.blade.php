@@ -24,7 +24,8 @@
         <a href ="#Ana Sayfa" class="active">Ana Sayfa</a>
         <a href ="#Menu">menu</a>
         <a href ="#Siparişi Değerlendir">Siparişi Değerlendir</a>
-        <a href ="#Garson Çağır">Garson Çağır</a>
+        <a href ="{{route('garson')}}">Garson Çağır</a>
+
         <a href ="#Hakkımızda">hakkımızda</a>
 
     </nav>

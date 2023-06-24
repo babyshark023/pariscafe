@@ -5,6 +5,7 @@ use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UrunisimController;
 use App\Http\Controllers\UrunekleController;
+use App\Http\Controllers\GarsonController;
 
 
 /*
@@ -32,5 +33,8 @@ Route::get('/urunpost',[UrunisimController::class,'Sepetfonk'])->name('urunpost'
 Route::get('/veriler', [UrunisimController::class, 'show'])->name('veriler_show');
 Route::get('/ek',[UrunekleController::class, 'ekle'])->name('ek');
 Route::get('/toplam',[UrunekleController::class,'toplam'])->name('toplam');
+Route::get('/garson', [GarsonController::class, 'garsoncagir'])->name('garson');
+Route::get('/cagir',[GarsonController::class,'cagirmasa'])->name('cagir');
+
 
 

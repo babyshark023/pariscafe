@@ -24,8 +24,8 @@
     <label for="tatlı_icecek">Ürünün Türünü Giriniz:</label>
     <select class="custom-select" id="tatlı_icecek" name="urun_cesit" required>
         <option value="">Ürünü Seçiniz</option>
-        <option value="0">tatlı</option>
-        <option value="1">içecek</option>
+        <option value="tatli">tatlı</option>
+        <option value="icecek">içecek</option>
     </select>
     <br>
     <br>
