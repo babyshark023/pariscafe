@@ -38,3 +38,5 @@ Route::get('/cagir',[GarsonController::class,'cagirmasa'])->name('cagir');
 
 
 
+Route::get('social/{provider}', 'SocialController@redirect');
+Route::get('social/{provider}/callback', 'SocialController@callback');
